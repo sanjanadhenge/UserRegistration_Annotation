@@ -17,6 +17,9 @@ namespace Annotation_User_Registration
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Name should be minimum 3 characters and maximum of 100 characters")]
         [DataType(DataType.Text)]
         public string LastName { get; set; }
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        public string Email { get; set; }
 
     }
 }

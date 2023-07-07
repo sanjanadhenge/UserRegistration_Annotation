@@ -13,6 +13,7 @@ namespace Annotation_User_Registration
            User_Reg user_Reg = new User_Reg();
             user_Reg.FirstName = "Sanjana";
             user_Reg.LastName = "Dhenge";
+            user_Reg.Email="abc@5123gmail.com"
             ValidationContext context = new ValidationContext(user_Reg, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
             bool valid = Validator.TryValidateObject(user_Reg, context, results, true);
@@ -28,6 +29,7 @@ namespace Annotation_User_Registration
             {
                 Console.WriteLine(user_Reg.FirstName);
                 Console.WriteLine(user_Reg.LastName);
+                Console.WriteLine(user_Reg.Email);
             }
         }
     }

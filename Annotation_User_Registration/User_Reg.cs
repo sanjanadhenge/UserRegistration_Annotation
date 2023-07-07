@@ -23,7 +23,7 @@ namespace Annotation_User_Registration
         [DataType(DataType.PhoneNumber)]
         [Phone]
         public string PhoneNumber { get; set; }
-        [RegularExpression("^[A-z]{1,}[0-9a-z]{7,}$")]
+        [RegularExpression("^[A-z]{1,}[a-z]{6,}[0-9]{1,}$")]
         public string Password { get; set; }
 
 

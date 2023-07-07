@@ -20,6 +20,9 @@ namespace Annotation_User_Registration
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string Email { get; set; }
+        [DataType(DataType.PhoneNumber)]
+        [Phone]
+        public string PhoneNumber { get; set; }
 
     }
 }

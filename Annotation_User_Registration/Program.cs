@@ -15,6 +15,7 @@ namespace Annotation_User_Registration
             user_Reg.LastName = "Dhenge";
             user_Reg.Email = "abc@5123gmail.com";
             user_Reg.PhoneNumber= "1234567890";
+            user_Reg.Password = "Abcag";
             ValidationContext context = new ValidationContext(user_Reg, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
             bool valid = Validator.TryValidateObject(user_Reg, context, results, true);
@@ -32,6 +33,7 @@ namespace Annotation_User_Registration
                 Console.WriteLine(user_Reg.LastName);
                 Console.WriteLine(user_Reg.Email);
                 Console.WriteLine(user_Reg.PhoneNumber);
+                Console.WriteLine(user_Reg.Password);
             }
         }
     }

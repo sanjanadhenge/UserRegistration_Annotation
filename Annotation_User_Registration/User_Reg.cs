@@ -23,6 +23,9 @@ namespace Annotation_User_Registration
         [DataType(DataType.PhoneNumber)]
         [Phone]
         public string PhoneNumber { get; set; }
+        [RegularExpression("^[0-9a-zA-Z]{8,}$")]
+        public string Password { get; set; }
+
 
     }
 }
